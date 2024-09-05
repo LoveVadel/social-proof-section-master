@@ -13,9 +13,6 @@
     display: block;
     max-width: 100%;
   }
-  input, button, textarea, select {
-    font: inherit;
-  }
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
@@ -52,7 +49,7 @@
   h1{
     font-family: league-bold, system-ui;
     line-height: 1;
-    padding-right: 20px ;
+    padding-right: 50px ;
     padding-bottom: 20px ;
     color: hsl(300, 43%, 22%);
   }
@@ -78,6 +75,9 @@
 
   .section1>div img{
     width: 12px;
+  }
+  .section1>div:last-child p{
+    font-weight: bold;
   }
 
   .firstRated{
@@ -106,7 +106,6 @@
   }
 
   /*Styling for section two */
-
   .section2{
     display: flex;
     gap: 20px;
@@ -143,4 +142,15 @@
   .anne{
     position: relative;
     top: 30px;
+  }
+
+/* Styling the footer*/
+  footer{
+    margin: 0 auto;
+    background-color: hsl(300, 43%, 22%) ;
+    color: hsl(300, 24%, 96%);
+    text-align: center;
+    padding: 5px 0;
+    width: min(80%, 1000px);
+    margin-top: 100px;
   }
