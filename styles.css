@@ -1,0 +1,82 @@
+/*CSS RESET*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+  }
+  picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/*font*/
+  @font-face {
+    font-family: League;
+    src: url(font/LeagueSpartan-Regular.ttf);
+  }
+
+  body{
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left -10% top 0px, right -60% bottom 0px;
+    height: 100vh;
+    font-family: League;
+  }
+
+  .container{
+    width: min(80%, 1000px);
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  h1{
+    line-height: 1;
+    font-weight: 700;
+    padding-right: 20px ;
+    padding-bottom: 20px ;
+  }
+
+  .section1{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section1 > div{
+    width:45%;
+  }
+
+  .section1>div:last-child > div{
+    background-color:hsl(300, 24%, 96%);
+    margin: 2px;
+    display: flex;
+    width: 310px;
+    padding: 10px 10px ;
+    border-radius: 5px;
+    justify-content: space-between;
+  }
+
+  .secondRated{
+    position: relative;
+    top: 10px;
+    left: 30px;
+  }
+
+  .thirdRated{
+    position: relative;
+    top: 20px;
+    left: 60px;
+  }
